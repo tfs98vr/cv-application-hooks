@@ -1,0 +1,65 @@
+.courses-container {
+  background-color: slategray;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 15px;
+  gap: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.courses-container label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.courses-container input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
+}
+
+.courses-container input:disabled {
+  cursor: not-allowed;
+}
+
+input[type=checkbox] {
+  width: 15px;
+  transform: scale(1.5);
+}
+
+.c-curso,
+.c-instituicao,
+.c-inicio,
+.c-fim {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-curso {
+  grid-column: 1 / 4;
+}
+
+.c-instituicao {
+  grid-column: 4 / 7;
+}
+
+.c-inicio {
+  grid-column: 1 / 3;
+}
+
+.c-andamento {
+  grid-column: 3 / 5;
+  align-self: center;
+  justify-self: center;
+}
+
+.c-fim {
+  grid-column: 5 / 7;
+}
+
